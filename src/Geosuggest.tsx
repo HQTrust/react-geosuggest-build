@@ -476,10 +476,6 @@ export default class extends React.Component<IProps, IState> {
 
     this.setState({
       isSuggestsHidden: true,
-      userInput:
-        typeof suggest.label !== 'object'
-          ? suggest.label
-          : suggest.description || ''
     });
 
     if (suggest.location) {
